@@ -18,4 +18,8 @@ Please fork this repository and follow along **using your fork** as the instruct
  - read the port from the environment: `const port = process.env.PORT`
  - define a `start` script in `package.json` that uses `node` (instead of `nodemon`) to run the server
     - by default heroky will run your application with `npm start`
+ - create a new application on heroku
+ - connect the app to Github (repository and branch): deploy > GitHub > find repository by name > click connect
+ - pick a branch to deploy
+ - enable Automatic Deploys
  - 
