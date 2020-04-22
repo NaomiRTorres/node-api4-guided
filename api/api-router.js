@@ -7,8 +7,13 @@ const router = express.Router();
 router.use(express.json());
 
 router.get("/", (req, res) => {
-  const message = process.env.MSG || "hello from my computer"
+  // read the message from the environment
+  const message = process.env.MESSAGE || "hello from my computer"
+
+  // return the message as part of the response
   res.status(200).json({ api: "up", message });
+
+  // visit your app url on heroku/api
 });
 
 router.get("/shouts", (req, res, next) => {
